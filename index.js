@@ -1,48 +1,48 @@
-function greet(name) {
+function greet(name: string) {
     return "Hello, " + name + "!";
 }
 
-function isAdult(age) {
+function isAdult(age: number) {
     return age >= 18;
 }
 
-function calculateAverage(score1, score2, score3) {
+function calculateAverage(score1: number, score2: number, score3: number) {
     return (score1 + score2 + score3) / 3;
 }
 
-function hasPassed(average) {
+function hasPassed(average: number) {
     return average >= 60;
 }
 
-function toUpperCase(str) {
+function toUpperCase(str: string) {
     return str.toUpperCase();
 }
 
-function toLowerCase(str) {
+function toLowerCase(str: string) {
     return str.toLowerCase();
 }
 
-function contains(str, substring) {
+function contains(str: string, substring: string) {
     return str.indexOf(substring) !== -1;
 }
 
-function isEven(number) {
+function isEven(number: number) {
     return number % 2 === 0;
 }
 
-function isOdd(number) {
+function isOdd(number: number) {
     return number % 2 !== 0;
 }
 
-function isPositive(number) {
+function isPositive(number: number) {
     return number > 0;
 }
 
-function isNegative(number) {
+function isNegative(number: number) {
     return number < 0;
 }
 
-function compareNumbers(num1, num2) {
+function compareNumbers(num1: number, num2: number) {
     if (num1 > num2) {
         return num1 + " is greater than " + num2;
     } else if (num1 < num2) {
@@ -52,23 +52,23 @@ function compareNumbers(num1, num2) {
     }
 }
 
-function isEmpty(str) {
+function isEmpty(str: string) {
     return str.length === 0;
 }
 
-function trim(str) {
+function trim(str: string) {
     return str.trim();
 }
 
-function getLength(str) {
+function getLength(str: string) {
     return str.length;
 }
 
-function concatenate(str1, str2) {
+function concatenate(str1: string, str2: string) {
     return str1 + " " + str2;
 }
 
-function checkBoolean(value) {
+function checkBoolean(value: boolean) {
     if (value) {
         return "The value is true";
     } else {
@@ -76,19 +76,19 @@ function checkBoolean(value) {
     }
 }
 
-function reverseString(str) {
+function reverseString(str: string) {
     return str.split("").reverse().join("");
 }
 
-function numberToString(number) {
+function numberToString(number: number) {
     return number.toString();
 }
 
-function stringToNumber(str) {
+function stringToNumber(str: string) {
     return parseInt(str);
 }
 
-function roundNumber(number) {
+function roundNumber(number: number) {
     return Math.round(number);
 }
 
@@ -114,35 +114,35 @@ console.log("Number to string: " + numberToString(123));
 console.log("String to number: " + stringToNumber("456"));
 console.log("Rounded number: " + roundNumber(4.7));
 
-function square(number) {
+function square(number: number) {
     return number * number;
 }
 
-function cube(number) {
+function cube(number: number) {
     return number * number * number;
 }
 
-function squareRoot(number) {
+function squareRoot(number: number) {
     return Math.sqrt(number);
 }
 
-function absoluteValue(number) {
+function absoluteValue(number: number) {
     return Math.abs(number);
 }
 
-function randomBetween(min, max) {
+function randomBetween(min: number, max: number) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function isInteger(number) {
+function isInteger(number: number) {
     return Number.isInteger(number);
 }
 
-function power(base, exponent) {
+function power(base: number, exponent: number) {
     return Math.pow(base, exponent);
 }
 
-function factorial(number) {
+function factorial(number: number) {
     if (number === 0 || number === 1) {
         return 1;
     }
@@ -153,7 +153,7 @@ function factorial(number) {
     return result;
 }
 
-function isPrime(number) {
+function isPrime(number: number) {
     if (number <= 1) return false;
     if (number <= 3) return true;
 
@@ -165,16 +165,16 @@ function isPrime(number) {
     return true;
 }
 
-function replaceSpaces(str) {
+function replaceSpaces(str: string) {
     return str.split(" ").join("-");
 }
 
-function isPalindrome(str) {
+function isPalindrome(str: string) {
     let reversed = str.split("").reverse().join("");
     return str === reversed;
 }
 
-function findMax(arr) {
+function findMax(arr: number) {
     let max = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] > max) {
@@ -184,7 +184,7 @@ function findMax(arr) {
     return max;
 }
 
-function findMin(arr) {
+function findMin(arr: number) {
     let min = arr[0];
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] < min) {
@@ -194,7 +194,7 @@ function findMin(arr) {
     return min;
 }
 
-function sortArrayAscending(arr) {
+function sortArrayAscending(arr: number) {
     return arr.sort((a, b) => a - b);
 }
 
