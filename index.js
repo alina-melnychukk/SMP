@@ -91,7 +91,7 @@ function stringToNumber(str: string) {
 function roundNumber(number: number) {
     return Math.round(number);
 }
-
+// 
 console.log(greet("John"));
 console.log("Is John an adult? " + isAdult(20));
 console.log("Average score: " + calculateAverage(70, 80, 90));
